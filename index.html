@@ -54,7 +54,14 @@
 <body>
 
     <div id="header"></div>
-    <div class="th-hero-wrapper hero-1 bg-smoke" id="hero">
+
+    <!-- Hero Banner -->
+    <section style="height: 100vh;
+  width: 100%;
+  background: url('assets/img/Hyderabad\ House_Banner.png') no-repeat center center/cover;" class="hero-banner">
+    </section>
+
+    <!--<div class="th-hero-wrapper hero-1 bg-smoke" id="hero">
         <div class="hero-img-shape-1">
             <div class="logo-icon-wrap">
                 <div class="logo-icon">
@@ -91,7 +98,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <section class="space overflow-hidden space-extra-bottom">
         <div class="container">
             <div class="title-area text-center mb-60"><span class="sub-title text-anime-style-1">Food Category</span>
@@ -1096,31 +1103,31 @@
             </path>
         </svg></div>
 
- <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
-<script src="assets/js/app.min.js"></script>
-<script src="assets/js/gsap.min.js"></script>
-<script src="assets/js/lenis.min.js"></script>
-<script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/lenis.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
 
-<script>
-  async function loadHTML(id, file) {
-    let response = await fetch(file);
-    if (response.ok) {
-      document.getElementById(id).innerHTML = await response.text();
-    }
-  }
+    <script>
+        async function loadHTML(id, file) {
+            let response = await fetch(file);
+            if (response.ok) {
+                document.getElementById(id).innerHTML = await response.text();
+            }
+        }
 
-  // Load header and footer first
-  Promise.all([
-    loadHTML("header", "header.html"),
-    loadHTML("footer", "footer.html")
-  ]).then(() => {
-    // Run main.js AFTER header/footer are loaded
-    const script = document.createElement("script");
-    script.src = "assets/js/main.js";
-    document.body.appendChild(script);
-  });
-</script>
+        // Load header and footer first
+        Promise.all([
+            loadHTML("header", "header.html"),
+            loadHTML("footer", "footer.html")
+        ]).then(() => {
+            // Run main.js AFTER header/footer are loaded
+            const script = document.createElement("script");
+            script.src = "assets/js/main.js";
+            document.body.appendChild(script);
+        });
+    </script>
 
 
 </body>
