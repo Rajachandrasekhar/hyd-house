@@ -109,6 +109,11 @@ video {
   max-width: 100%;
   height: auto;
 }
+.logo{
+  max-width: 100px !important;
+    height: auto;
+    margin-left: 60px;
+}
 ul {
   list-style-type: disc;
 }
@@ -14536,7 +14541,7 @@ span.select2-selection.select2-selection--single:focus {
   padding: 108px 0 65px;
 }
 .coming-soon .box-text {
-  font-size: 36px;
+  font-size: 32px;
   color: var(--white-color);
   font-family: var(--title-font);
   font-weight: 500;
@@ -14563,7 +14568,7 @@ span.select2-selection.select2-selection--single:focus {
   text-transform: uppercase;
 }
 .coming-title {
-  font-size: 145px;
+  font-size: 115px;
   line-height: 1;
   text-transform: uppercase;
   margin-top: -0.15em;
